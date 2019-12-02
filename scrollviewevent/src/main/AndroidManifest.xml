@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zwl.scrollviewevent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AppMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".scrollview_scrollview.ScrollView_ScrollView_InActivity" />
+        <activity android:name=".scrollview_scrollview.ScrollView_ScrollView_OtherActivity" />
+        <activity android:name=".scrollview_scrollview.ScrollView_ScrollView_OutActivity" />
+        <activity android:name=".scrollview_scrollview.ScrollView_ScrollView_MainActivity" />
+        <activity android:name=".scrollview_recyclerview.ScrollView_RecyclerView_MainActivity" />
+        <activity android:name=".scrollview_swiperefreshlayout.Scrollview_swiperefreshlayout_MainActivity" />
+        <activity android:name=".scrollview_viewpager.Scrollview_viewpager_MainActivity" />
+        <activity android:name=".scrollview_viewpager.Scrollview_In_ViewPager_Activity" />
+        <activity android:name=".scrollview_viewpager.ViewPager_In_Scrollview_Activity" />
+        <activity android:name=".scrollview_viewpager.ViewPager_In_Scrollview_In_ViewPager_Activity" />
+    </application>
+
+</manifest>

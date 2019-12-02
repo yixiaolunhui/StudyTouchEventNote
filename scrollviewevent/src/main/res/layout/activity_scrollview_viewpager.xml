@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/sv_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrollview嵌套Viewpager" />
+
+    <Button
+        android:id="@+id/vp_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viewpager嵌套Scrollview" />
+    <Button
+        android:id="@+id/vp_sv_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viewpager嵌套Scrollview嵌套Viewpager" />
+</LinearLayout>
