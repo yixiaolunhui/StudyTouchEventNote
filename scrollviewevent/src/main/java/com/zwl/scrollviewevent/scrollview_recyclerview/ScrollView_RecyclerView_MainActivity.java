@@ -3,6 +3,8 @@ package com.zwl.scrollviewevent.scrollview_recyclerview;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,7 +40,7 @@ public class ScrollView_RecyclerView_MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(mRecyclerAdapter);
-
+        mRecyclerView.setNestedScrollingEnabled(true);
     }
 
     private List<MyData> getData() {
@@ -49,5 +51,13 @@ public class ScrollView_RecyclerView_MainActivity extends AppCompatActivity {
             dataList.add(myData);
         }
         return dataList;
+    }
+
+    public void onTopClick(View view) {
+        Toast.makeText(this, "onTopClick", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onBottomClick(View view) {
+        Toast.makeText(this, "onBottomClick", Toast.LENGTH_SHORT).show();
     }
 }

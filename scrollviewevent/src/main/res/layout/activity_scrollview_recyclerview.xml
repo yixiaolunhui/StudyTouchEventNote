@@ -20,10 +20,11 @@
                 android:layout_height="150dp"
                 android:gravity="center"
                 android:textSize="30sp"
+                android:onClick="onTopClick"
                 android:background="@color/colorPrimary"
                 android:text="顶部" />
 
-            <androidx.recyclerview.widget.RecyclerView
+            <com.zwl.scrollviewevent.weight.OptimizeRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
@@ -32,6 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:gravity="center"
+                android:onClick="onBottomClick"
                 android:textSize="30sp"
                 android:background="@color/colorPrimary"
                 android:text="底部" />

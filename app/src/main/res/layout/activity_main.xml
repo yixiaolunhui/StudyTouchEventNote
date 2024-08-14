@@ -6,13 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开闭原则，Software entities like classes, modules and functions should be open for extension but closed for modifications，软件实体比如类，模块，和函数应该对拓展开放，对修改关闭，也就是尽量通过拓展实体行为来实现变化。需要抽线约束，将相同的变化封装到一个接口或抽象类，将不同的变化封装到不同的接口或抽象类中。其实前面的5个原则都是开闭原则的指导设计工具和方法，开闭原则是他们的精神领袖。" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="迪米特法则，也称为最少知识原则，也就是一个对象应该对其他对象有最少的了解。需要只和朋友交流；朋友间也是有距离的；自己的就是自己的；如果一个类放在本类中，既不增加类间的关系，也对本类不产生负面影响，那就放置在本类中。类间解耦，弱耦合。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="迪米特法则，也称为最少知识原则，也就是一个对象应该对其他对象有最少的了解。需要只和朋友交流；朋友间也是有距离的；自己的就是自己的；如果一个类放在本类中，既不增加类间的关系，也对本类不产生负面影响，那就放置在本类中。类间解耦，弱耦合。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+
+            <com.zwl.studytoucheventdemo.ScrollEditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖倒置原则，模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的；接口或者抽象类不依赖于实现类；实现类依赖与接口或抽象类。需要每个类尽量都有接口或者抽象类；变量的表面类型尽量是接口或者抽象类；任何类都不应该从具体类派生（超过两层）， 尽量不要复写基类的方法。采用依赖倒置原则可减少类间的耦合性，提高系统的稳定性，降低并行开发引起的风险，提高代码可读性和可维护性。依赖也可以称为注入，一般可以通过构造函数注入，属性注入，接口注入。" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:text="点击"
+        android:id="@+id/btn"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
